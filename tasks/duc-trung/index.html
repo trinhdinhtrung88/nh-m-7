@@ -2,91 +2,270 @@
 <html lang="vi">
 
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <title>Trịnh Đình Đức Trung - Profile</title>
 
-    <title>Trịnh Đình Đức Trung</title>
-
-    <link rel="stylesheet"
-          href="../../css/profile.css">
-
+    <link rel="stylesheet" href="../../css/profile.css?v=20260921-3">
 </head>
 
 <body>
 
-<div class="container">
+<header class="profile-header">
 
-    <h1>GIỚI THIỆU CÁ NHÂN</h1>
+    <div class="header-inner">
 
-    <div class="profile">
+        <div class="header-left">
 
-        <img
-            src="images/avatar.jpg"
-            alt="Ảnh đại diện Trịnh Đình Đức Trung"
-            class="avatar"
-        >
+            <span class="header-label">
+                MEMBER PROFILE
+            </span>
 
-        <div class="info">
+            <h1>Trịnh Đình Đức Trung</h1>
 
             <p>
-                <strong>Họ và tên:</strong>
-                Trịnh Đình Đức Trung
+                Trang giới thiệu cá nhân thành viên Nhóm 7
+                trong môn Lập trình Web.
             </p>
 
-            <p>
-                <strong>Mã sinh viên:</strong>
-                23010108
-            </p>
+        </div>
 
-            <p>
-                <strong>Ngành:</strong>
-                Công nghệ thông tin
-            </p>
+        <div class="header-right">
 
-            <p>
-                <strong>Ngày sinh:</strong>
-                08/11/2005
-            </p>
+            <h2>PROFILE INFO</h2>
 
-            <p>
-                <strong>Giới tính:</strong>
-                Nam
-            </p>
+            <div class="code-info">
+
+                <p>
+                    <strong>name:</strong>
+                    "Trịnh Đình Đức Trung";
+                </p>
+
+                <p>
+                    <strong>student_id:</strong>
+                    "23010108";
+                </p>
+
+                <p>
+                    <strong>major:</strong>
+                    "Công nghệ thông tin";
+                </p>
+
+                <p>
+                    <strong>team:</strong>
+                    "Nhóm 7";
+                </p>
+
+            </div>
 
         </div>
 
     </div>
 
-
-    <h2>Sở thích</h2>
-
-    <ul>
-        <li>Nghe nhạc</li>
-    </ul>
+</header>
 
 
-    <h2>Sở trường</h2>
+<div class="profile-layout">
 
-    <ul>
-        <li>Thể thao</li>
-    </ul>
+    <aside class="profile-sidebar">
+
+        <img
+            src="images/avatar.jpg"
+            alt="Ảnh đại diện Trịnh Đình Đức Trung"
+            class="profile-avatar"
+        >
+
+        <h2>Trịnh Đình Đức Trung</h2>
+
+        <p class="student-id">
+            MSSV · 23010108
+        </p>
+
+        <ul class="profile-nav">
+
+            <li>
+                <a href="#information">
+                    Thông tin cá nhân
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills">
+                    Sở thích & Sở trường
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="../group/about.html"
+                    class="primary-link"
+                >
+                    Trang giới thiệu nhóm
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
 
 
-    <a href="../group/about.html"
-       class="back">
-        ← Xem thông tin nhóm
-    </a>
+    <main class="profile-content">
 
-    <a href="../../index.html"
-       class="back">
-        ← Trang chủ
-    </a>
+        <!-- MỤC 01 -->
+        <section
+            class="profile-section"
+            id="information"
+        >
+
+            <div class="section-head">
+
+                <div class="section-number">
+                    01
+                </div>
+
+                <h2>
+                    Thông tin cá nhân
+                </h2>
+
+            </div>
+
+            <div class="section-body">
+
+                <div class="info-grid">
+
+                    <div class="info-item">
+                        <span class="info-label">
+                            Họ và tên
+                        </span>
+
+                        <span class="info-value">
+                            Trịnh Đình Đức Trung
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">
+                            Mã sinh viên
+                        </span>
+
+                        <span class="info-value">
+                            23010108
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">
+                            Ngành
+                        </span>
+
+                        <span class="info-value">
+                            Công nghệ thông tin
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">
+                            Ngày sinh
+                        </span>
+
+                        <span class="info-value">
+                            08/11/2005
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">
+                            Giới tính
+                        </span>
+
+                        <span class="info-value">
+                            Nam
+                        </span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">
+                            Nhóm
+                        </span>
+
+                        <span class="info-value">
+                            Nhóm 7
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- MỤC 02 -->
+        <section
+            class="profile-section"
+            id="skills"
+        >
+
+            <div class="section-head">
+
+                <div class="section-number">
+                    02
+                </div>
+
+                <h2>
+                    Sở thích & Sở trường
+                </h2>
+
+            </div>
+
+            <div class="section-body">
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+
+                        <span>
+                            SỞ THÍCH
+                        </span>
+
+                        <h3>
+                            Nghe nhạc
+                        </h3>
+
+                        <p>
+                            Hoạt động yêu thích trong
+                            thời gian học tập và giải trí.
+                        </p>
+
+                    </div>
+
+                    <div class="skill-card">
+
+                        <span>
+                            SỞ TRƯỜNG
+                        </span>
+
+                        <h3>
+                            Thể thao
+                        </h3>
+
+                        <p>
+                            Điểm mạnh và khả năng
+                            nổi bật của thành viên.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </div>
 
 </body>
-
 </html>

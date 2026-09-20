@@ -1,83 +1,570 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg: #edf1f7;
+    --light: #eef2f8;
+    --dark: #071225;
+    --dark2: #0a1930;
+    --cyan: #57dff8;
+    --text: #182235;
+    --muted: #64748b;
+    --border: #d8e1ed;
+    --white: #ffffff;
+}
+
 body {
-    margin: 0;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
 }
 
-.container {
-    max-width: 850px;
+
+/* =========================
+   HEADER
+========================= */
+
+.profile-header {
+    width: 100%;
+
+    background:
+        linear-gradient(
+            100deg,
+            #eef2f8 0%,
+            #eef2f8 52%,
+            #071225 52%,
+            #0a1930 100%
+        );
+
+    border-bottom: 3px solid var(--cyan);
+
+    box-shadow:
+        0 4px 18px
+        rgba(87, 223, 248, 0.22);
+}
+
+.header-inner {
+    max-width: 1250px;
+    min-height: 285px;
+
     margin: auto;
-    padding: 35px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
 }
 
-h1 {
-    text-align: center;
-    color: #1877f2;
-    margin-bottom: 30px;
-}
+.header-left {
+    padding: 48px 45px;
 
-.profile {
     display: flex;
-    gap: 35px;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.avatar {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #1877f2;
+.header-label {
+    width: fit-content;
+
+    padding: 7px 14px;
+
+    margin-bottom: 17px;
+
+    border-radius: 20px;
+
+    background: #d9f8ff;
+    color: #087f9c;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
-.info {
-    flex: 1;
+.header-left h1 {
+    color: #111827;
+
+    font-size: 42px;
+    line-height: 1.15;
+
+    margin-bottom: 13px;
 }
 
-.info p {
-    font-size: 17px;
-    line-height: 1.8;
-    margin: 5px 0;
-}
+.header-left p {
+    color: #596579;
 
-h2 {
-    margin-top: 30px;
-    padding-bottom: 8px;
-    color: #1877f2;
-    border-bottom: 2px solid #eeeeee;
-}
+    max-width: 550px;
 
-ul {
     font-size: 16px;
-    line-height: 1.9;
 }
 
-.back {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 10px 18px;
+.header-right {
+    padding: 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     color: white;
-    background: #1877f2;
-    text-decoration: none;
-    border-radius: 8px;
 }
 
-.back:hover {
-    background: #0d5fc7;
+.header-right h2 {
+    margin-bottom: 20px;
+
+    font-size: 22px;
+
+    letter-spacing: 3px;
+}
+
+.code-info {
+    font-family: "Courier New", monospace;
+
+    color: #cbdaf0;
+
+    line-height: 2;
+}
+
+.code-info strong {
+    color: var(--cyan);
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.profile-layout {
+    width: 92%;
+    max-width: 1250px;
+
+    margin: 35px auto 60px;
+
+    display: grid;
+
+    grid-template-columns:
+        290px
+        minmax(0, 1fr);
+
+    gap: 28px;
+}
+
+
+/* =========================
+   SIDEBAR PROFILE
+========================= */
+
+.profile-sidebar {
+    align-self: start;
+
+    position: sticky;
+    top: 24px;
+
+    padding: 28px 22px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #071225,
+            #0a1930
+        );
+
+    border:
+        2px solid
+        rgba(87, 223, 248, 0.65);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 0 18px
+        rgba(87, 223, 248, 0.15);
+}
+
+.profile-avatar {
+    width: 155px;
+    height: 155px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    margin-bottom: 18px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,0.28),
+        0 0 16px
+        rgba(87,223,248,0.20);
+}
+
+.profile-sidebar h2 {
+    color: white;
+
+    margin-bottom: 5px;
+
+    font-size: 21px;
+}
+
+.student-id {
+    color: var(--cyan);
+
+    font-size: 14px;
+
+    margin-bottom: 22px;
+}
+
+.profile-nav {
+    list-style: none;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,0.12);
+
+    padding-top: 16px;
+}
+
+.profile-nav li {
+    margin-bottom: 8px;
+}
+
+.profile-nav a {
+    display: block;
+
+    padding: 11px 13px;
+
+    text-decoration: none;
+
+    color: #cbdaf0;
+
+    border-radius: 9px;
+
+    transition: 0.2s;
+}
+
+.profile-nav a:hover {
+    background:
+        rgba(87,223,248,0.10);
+
+    color: var(--cyan);
+
+    transform: translateX(3px);
+}
+
+.profile-nav .primary-link {
+    background: var(--cyan);
+
+    color: #071225;
+
+    font-weight: bold;
+}
+
+.profile-nav .primary-link:hover {
+    background: #7ce9ff;
+
+    color: #071225;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.profile-content {
+    min-width: 0;
+}
+
+.profile-section {
+    margin-bottom: 25px;
+
+    background: #f8fafc;
+
+    border:
+        2px solid
+        rgba(87,223,248,0.45);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 0 14px
+        rgba(87,223,248,0.08);
+}
+
+.section-head {
+    padding: 20px 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    border-bottom:
+        1px solid
+        #dce5ef;
+}
+
+.section-number {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: var(--dark);
+
+    color: var(--cyan);
+
+    font-weight: bold;
+}
+
+.section-head h2 {
+    color: #111827;
+
+    font-size: 23px;
+}
+
+.section-body {
+    padding: 27px;
+}
+
+
+/* =========================
+   THÔNG TIN CÁ NHÂN
+========================= */
+
+.info-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 15px;
+}
+
+.info-item {
+    padding: 17px;
+
+    background: var(--light);
+
+    border-radius: 12px;
+
+    border-left:
+        4px solid
+        var(--cyan);
+
+    box-shadow:
+        4px 4px 10px
+        rgba(148,163,184,0.15);
+}
+
+.info-label {
+    display: block;
+
+    margin-bottom: 4px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+}
+
+.info-value {
+    color: #111827;
+
+    font-size: 16px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   HOBBY / STRENGTH
+========================= */
+
+.skills-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.skill-card {
+    min-height: 150px;
+
+    padding: 24px;
+
+    border-radius: 17px;
+
+    background:
+        linear-gradient(
+            180deg,
+            #071225,
+            #0a1930
+        );
+
+    color: white;
+
+    border:
+        2px solid
+        rgba(87,223,248,0.42);
+
+    box-shadow:
+        0 0 14px
+        rgba(87,223,248,0.10);
+}
+
+.skill-card span {
+    display: inline-block;
+
+    margin-bottom: 11px;
+
+    color: var(--cyan);
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.skill-card h3 {
+    font-size: 23px;
+
+    margin-bottom: 7px;
+}
+
+.skill-card p {
+    color: #cbdaf0;
+}
+
+
+/* =========================
+   ACTION
+========================= */
+
+.action-box {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.action-button {
+    display: inline-block;
+
+    padding: 11px 18px;
+
+    border-radius: 11px;
+
+    background: var(--dark);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.action-button:hover {
+    color: var(--cyan);
+
+    transform: translateY(-2px);
+}
+
+.action-button.light {
+    background: var(--light);
+
+    color: #111827;
+
+    box-shadow:
+        -5px -5px 10px white,
+        5px 5px 10px
+        rgba(148,163,184,0.28);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .profile-header {
+        background: #eef2f8;
+    }
+
+    .header-inner {
+        grid-template-columns: 1fr;
+    }
+
+    .header-right {
+        background: var(--dark);
+    }
+
+    .profile-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-sidebar {
+        position: static;
+    }
+
+    .info-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 600px) {
-    .profile {
-        flex-direction: column;
-        text-align: center;
+
+    .header-left,
+    .header-right {
+        padding: 32px 22px;
     }
+
+    .header-left h1 {
+        font-size: 34px;
+    }
+
+    .profile-layout {
+        width: 94%;
+    }
+}
+
+/* Nút Trang giới thiệu nhóm nổi bật */
+.profile-nav .primary-link {
+    background: #57dff8;
+    color: #071225;
+    font-weight: 700;
+
+    box-shadow:
+        0 0 12px rgba(87, 223, 248, 0.55),
+        0 0 24px rgba(87, 223, 248, 0.22);
+
+    border: 1px solid rgba(255,255,255,0.65);
+}
+
+.profile-nav .primary-link:hover {
+    background: #8decff;
+    color: #071225;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 16px rgba(87, 223, 248, 0.75),
+        0 0 30px rgba(87, 223, 248, 0.30);
 }
