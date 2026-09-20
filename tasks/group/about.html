@@ -1,37 +1,27 @@
 <!DOCTYPE html>
-
 <html lang="vi">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Giới thiệu Nhóm 7</title>
 
     <style>
-
-        * {
-            box-sizing: border-box;
-        }
-
         body {
-            margin: 0;
-            padding: 40px 20px;
             font-family: Arial, sans-serif;
-            background: #f4f6f8;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 30px;
             color: #333;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1000px;
             margin: auto;
             background: white;
-            padding: 35px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            padding: 30px;
+            border-radius: 12px;
         }
 
         h1 {
@@ -39,80 +29,55 @@
             color: #1877f2;
         }
 
+        h2 {
+            color: #1877f2;
+            margin-top: 30px;
+        }
+
         .description {
             text-align: center;
-            font-size: 17px;
-            color: #555;
-            margin-bottom: 35px;
-        }
-
-        h2 {
-            margin-top: 35px;
-            color: #1877f2;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-
-        .member-list {
-            line-height: 2;
-            font-size: 16px;
         }
 
         .members {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            margin-top: 25px;
+            gap: 20px;
         }
 
         .member {
-            padding: 25px;
             border: 1px solid #ddd;
-            border-radius: 12px;
+            border-radius: 10px;
+            padding: 20px;
             text-align: center;
-            background: #fafafa;
         }
 
         .member img {
             width: 150px;
             height: 150px;
-            border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #1877f2;
-        }
-
-        .member h3 {
-            margin-bottom: 8px;
-        }
-
-        .member p {
-            line-height: 1.7;
+            border-radius: 50%;
         }
 
         .member a {
             display: inline-block;
             margin-top: 10px;
-            padding: 9px 17px;
-            border-radius: 7px;
-            text-decoration: none;
-            color: white;
+            padding: 8px 15px;
             background: #1877f2;
-        }
-
-        .member a:hover {
-            background: #0d5fc7;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
         }
 
         table {
             width: 100%;
-            margin-top: 20px;
             border-collapse: collapse;
+            margin-top: 15px;
         }
 
         th,
         td {
-            padding: 13px;
-            border: 1px solid #ccc;
+            border: 1px solid #999;
+            padding: 10px;
             text-align: left;
         }
 
@@ -123,70 +88,49 @@
 
         form {
             margin-top: 20px;
-            padding: 25px;
-            background: #f7f9fc;
-            border-radius: 10px;
-        }
-
-        label {
-            display: block;
-            margin: 15px 0 7px;
-            font-weight: bold;
         }
 
         input[type="text"],
         input[type="email"] {
             width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 7px;
+            padding: 10px;
+            margin: 8px 0 15px 0;
+            box-sizing: border-box;
         }
 
         input[type="submit"] {
-            margin-top: 20px;
-            padding: 12px 25px;
-            border: none;
-            border-radius: 7px;
+            padding: 10px 20px;
             background: #1877f2;
             color: white;
+            border: none;
             cursor: pointer;
         }
 
         .back {
             display: inline-block;
-            margin-top: 30px;
-            padding: 10px 18px;
-            background: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 7px;
+            margin-top: 25px;
         }
 
         @media (max-width: 700px) {
-
             .members {
                 grid-template-columns: 1fr;
             }
-
         }
-
     </style>
 
 </head>
-
 
 <body>
 
 <div class="container">
 
-
-    <!-- TIÊU ĐỀ -->
+    <!-- PHẦN TIÊU ĐỀ -->
 
     <h1>NHÓM 7</h1>
 
     <p class="description">
-        Nhóm 7 gồm 4 thành viên cùng học tập,
-        thực hành HTML, CSS và Git trong môn Lập trình Web.
+        Nhóm 7 gồm 4 thành viên cùng học tập và thực hành
+        môn Lập trình Web.
     </p>
 
 
@@ -194,39 +138,17 @@
 
     <h2>Danh sách thành viên</h2>
 
-    <ul class="member-list">
-
-        <li>
-            Trịnh Đình Đức Trung -
-            MSSV: 23010108 -
-            Ngành: Công nghệ thông tin
-        </li>
-
-        <li>
-            Nguyễn Phan Mai Anh -
-            MSSV: 24105006 -
-            Ngành:
-        </li>
-
-        <li>
-            Nguyễn Thị Thuý Hường -
-            MSSV: 24108809 -
-            Ngành:
-        </li>
-
-        <li>
-            Nguyễn Trần Vũ -
-            MSSV: 24103913 -
-            Ngành:
-        </li>
-
+    <ul>
+        <li>Trịnh Đình Đức Trung - 23010108 - Công nghệ thông tin</li>
+        <li>Nguyễn Phan Mai Anh - 24105006 - Thương Mại Điện Tử</li>
+        <li>Nguyễn Thị Thuý Hường - 24108809 - Thương Mại Điện Tử</li>
+        <li>Nguyễn Trần Vũ - 24103913 - Thương Mại Điện Tử</li>
     </ul>
 
 
     <!-- THÔNG TIN CHI TIẾT -->
 
-    <h2>Thông tin chi tiết thành viên</h2>
-
+    <h2>Thông tin chi tiết từng thành viên</h2>
 
     <div class="members">
 
@@ -237,28 +159,25 @@
 
             <img
                 src="../duc-trung/images/avatar.jpg"
-                alt="Trịnh Đình Đức Trung"
+                alt="Ảnh đại diện Trịnh Đình Đức Trung"
             >
 
             <h3>Trịnh Đình Đức Trung</h3>
 
             <p>
-                <strong>MSSV:</strong>
-                23010108
+                MSSV: 23010108
             </p>
 
             <p>
-                <strong>Ngành:</strong>
-                Công nghệ thông tin
+                Ngành: Công nghệ thông tin
             </p>
 
             <p>
-                Sở thích nghe nhạc,
-                sở trường thể thao.
+                Sở thích nghe nhạc, sở trường thể thao.
             </p>
 
             <a href="../duc-trung/index.html">
-                Xem profile
+                Xem trang cá nhân
             </a>
 
         </div>
@@ -269,27 +188,26 @@
         <div class="member">
 
             <img
-                src="../mai_anh/images/avatar.svg"
-                alt="Nguyễn Phan Mai Anh"
+                src="../mai_anh/images/A1.png"
+                alt="Ảnh đại diện Nguyễn Phan Mai Anh"
             >
 
             <h3>Nguyễn Phan Mai Anh</h3>
 
             <p>
-                <strong>MSSV:</strong>
-                24105006
+                MSSV: 24105006
             </p>
 
             <p>
-                <strong>Ngành:</strong>
+                Ngành: Thương Mại Điện Tử
             </p>
 
             <p>
-                Thành viên Nhóm 7.
+                Sở thích nghe nhạc, sở trường vẽ.
             </p>
 
             <a href="../mai_anh/index.html">
-                Xem profile
+                Xem trang cá nhân
             </a>
 
         </div>
@@ -300,27 +218,25 @@
         <div class="member">
 
             <img
-                src="../thuy_huong/images/avatar.svg"
-                alt="Nguyễn Thị Thuý Hường"
+                src="../thuy_huong/images/H1.png"
+                alt="Ảnh đại diện Nguyễn Thị Thuý Hường"
             >
 
             <h3>Nguyễn Thị Thuý Hường</h3>
 
             <p>
-                <strong>MSSV:</strong>
-                24108809
+                MSSV: 24108809
             </p>
 
             <p>
-                <strong>Ngành:</strong>
-            </p>
+                Ngành: Thương Mại Điện Tử</p>
 
             <p>
-                Thành viên Nhóm 7.
+                Sở thích xem phim, sở trường ca hát.
             </p>
 
             <a href="../thuy_huong/index.html">
-                Xem profile
+                Xem trang cá nhân
             </a>
 
         </div>
@@ -331,31 +247,28 @@
         <div class="member">
 
             <img
-                src="../nguyen_tran_vu/images/avatar.svg"
-                alt="Nguyễn Trần Vũ"
+                src="../nguyen_tran_vu/images/V1.png"
+                alt="Ảnh đại diện Nguyễn Trần Vũ"
             >
 
             <h3>Nguyễn Trần Vũ</h3>
 
             <p>
-                <strong>MSSV:</strong>
-                24103913
+                MSSV: 24103913
             </p>
 
             <p>
-                <strong>Ngành:</strong>
-            </p>
+                Ngành: Thương Mại Điện Tử</p>
 
             <p>
-                Thành viên Nhóm 7.
+                Sở thích chơi game, sở trường kiếm tiền.
             </p>
 
             <a href="../nguyen_tran_vu/index.html">
-                Xem profile
+                Xem trang cá nhân
             </a>
 
         </div>
-
 
     </div>
 
@@ -366,60 +279,50 @@
 
     <table>
 
-        <thead>
+        <tr>
+            <th>Tên thành viên</th>
+            <th>Nhiệm vụ phụ trách</th>
+        </tr>
 
-            <tr>
-                <th>Tên thành viên</th>
-                <th>Nhiệm vụ phụ trách</th>
-            </tr>
+        <tr>
+            <td>Trịnh Đình Đức Trung</td>
+            <td>
+                Trang giới thiệu cá nhân và hỗ trợ trang giới thiệu nhóm
+            </td>
+        </tr>
 
-        </thead>
+        <tr>
+            <td>Nguyễn Phan Mai Anh</td>
+            <td>
+                Hoàn thiện thông tin cá nhân và hỗ trợ nội dung nhóm
+            </td>
+        </tr>
 
-        <tbody>
+        <tr>
+            <td>Nguyễn Thị Thuý Hường</td>
+            <td>
+                Hỗ trợ xây dựng nội dung trang To-do list
+            </td>
+        </tr>
 
-            <tr>
-                <td>Trịnh Đình Đức Trung</td>
-                <td>
-                    Trang giới thiệu nhóm,
-                    trang cá nhân và quản lý Git.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Nguyễn Phan Mai Anh</td>
-                <td>
-                    Hỗ trợ hoàn thiện nội dung trang tin tức.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Nguyễn Thị Thuý Hường</td>
-                <td>
-                    Hỗ trợ hoàn thiện trang To-do list.
-                </td>
-            </tr>
-
-            <tr>
-                <td>Nguyễn Trần Vũ</td>
-                <td>
-                    Kiểm tra giao diện,
-                    liên kết và nội dung website.
-                </td>
-            </tr>
-
-        </tbody>
+        <tr>
+            <td>Nguyễn Trần Vũ</td>
+            <td>
+                Hỗ trợ kiểm tra giao diện và liên kết website
+            </td>
+        </tr>
 
     </table>
 
 
-    <!-- FORM -->
+    <!-- FORM LIÊN HỆ -->
 
-    <h2>Liên hệ với nhóm</h2>
+    <h2>Form liên hệ</h2>
 
     <form>
 
         <label for="name">
-            Họ và tên
+            Họ và tên:
         </label>
 
         <input
@@ -427,12 +330,11 @@
             id="name"
             name="name"
             placeholder="Nhập họ và tên"
-            required
         >
 
 
         <label for="email">
-            Email
+            Email:
         </label>
 
         <input
@@ -440,23 +342,20 @@
             id="email"
             name="email"
             placeholder="Nhập email"
-            required
         >
 
 
         <input
             type="submit"
-            value="Gửi liên hệ"
+            value="Gửi"
         >
 
     </form>
 
 
-    <a href="../../index.html"
-       class="back">
+    <a href="../../index.html" class="back">
         ← Quay lại trang chủ
     </a>
-
 
 </div>
 
